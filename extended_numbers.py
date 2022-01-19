@@ -55,7 +55,7 @@ class O:
     
     def __repr__(self):
         string = str(self.data[0]) + ' e0'
-        for i in range(len(self.data) - 1):
+        for i in range(1, len(self.data)):
             string += ' + ' + str(self.data[i]) + ' e' + str(i)
         return string
     
